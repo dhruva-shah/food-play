@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <view
+        android:id="@+id/image"
+        class="com.restaurantsapp.simplecrop.CropImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_x="0dip"
+        android:layout_y="0dip"
+        android:background="#55000000" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip">
+
+
+        <Button
+            android:id="@+id/discard"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/cancel" />
+
+        <ImageButton
+            android:id="@+id/rotateLeft"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/discard"
+
+            android:src="@drawable/ic_rotate_left" />
+
+        <ImageButton
+            android:id="@+id/rotateRight"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/rotateLeft"
+            android:src="@drawable/ic_rotate_right" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/rotateRight"
+            android:text="@string/save" />
+
+    </RelativeLayout>
+</RelativeLayout>

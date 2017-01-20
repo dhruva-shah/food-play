@@ -1,0 +1,5 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorPrimaryDark">
+    <item android:drawable="@drawable/bg_back_button"> <!-- actual drawable set in code -->
+    </item>
+</ripple>
