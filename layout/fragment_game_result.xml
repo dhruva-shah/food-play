@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Large Text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/big_font"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/no_of_persons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="No of Persons"
+        android:inputType="number"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/big_font"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/button_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@color/black"
+        android:padding="@dimen/twenty_dp_dimens"
+        android:text="DATE"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/button_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@color/black"
+        android:padding="@dimen/twenty_dp_dimens"
+        android:text="TIME"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/resultBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@color/black"
+        android:padding="@dimen/twenty_dp_dimens"
+        android:text="PROCEED"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>

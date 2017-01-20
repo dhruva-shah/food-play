@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/text2</item>
+        <item name="colorPrimaryDark">@color/text1</item>
+        <item name="colorAccent">@color/text2</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.EditText">
+        <item name="colorControlNormal">@android:color/darker_gray</item>
+        <item name="colorControlActivated">@android:color/black</item>
+        <item name="colorControlHighlight">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.EditTextRed">
+        <item name="colorControlNormal">@android:color/darker_gray</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+
+    <style name="progressdialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <!--RatingBar Style-->
+    <style name="StarRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_full</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxHeight">30dp</item>
+    </style>
+</resources>

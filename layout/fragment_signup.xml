@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/ten_dp_dimens"
+            android:text="@string/restaurant_app"
+            android:textColor="@color/black"
+            android:textSize="@dimen/biggest_font"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/twenty_dp_dimens"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bigger_font"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlProfile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp_dimens"
+            android:gravity="center">
+
+            <com.restaurantsapp.utils.RoundedImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="@dimen/eighty_dp"
+                android:layout_height="@dimen/eighty_dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/men_image" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_profile"
+                android:layout_alignRight="@+id/iv_profile"
+                android:src="@drawable/ic_edit" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/fragment_signup_edittext_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/forty_dp"
+            android:layout_marginRight="@dimen/forty_dp"
+            android:layout_marginTop="@dimen/ten_dp_dimens"
+            android:ellipsize="end"
+            android:hint="@string/hint_name"
+            android:inputType="textCapSentences"
+            android:maxLines="3"
+            android:paddingBottom="@dimen/twenty_dp_dimens"
+            android:paddingTop="@dimen/twenty_dp_dimens"
+            android:textSize="@dimen/default_font"
+            android:theme="@style/AppTheme.EditTextRed" />
+
+        <EditText
+            android:id="@+id/fragment_signup_edittext_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/forty_dp"
+            android:layout_marginRight="@dimen/forty_dp"
+            android:hint="@string/hint_phone"
+            android:inputType="phone"
+            android:paddingBottom="@dimen/twenty_dp_dimens"
+            android:paddingTop="@dimen/twenty_dp_dimens"
+            android:singleLine="true"
+            android:textSize="@dimen/default_font"
+            android:theme="@style/AppTheme.EditTextRed" />
+
+        <EditText
+            android:id="@+id/fragment_signup_edittext_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/forty_dp"
+            android:layout_marginRight="@dimen/forty_dp"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="@dimen/twenty_dp_dimens"
+            android:paddingTop="@dimen/twenty_dp_dimens"
+            android:singleLine="true"
+            android:textSize="@dimen/default_font"
+            android:theme="@style/AppTheme.EditTextRed" />
+
+
+        <EditText
+            android:id="@+id/fragment_signup_edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/forty_dp"
+            android:layout_marginRight="@dimen/forty_dp"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:paddingBottom="@dimen/twenty_dp_dimens"
+            android:paddingTop="@dimen/twenty_dp_dimens"
+            android:singleLine="true"
+            android:textSize="@dimen/default_font"
+            android:theme="@style/AppTheme.EditTextRed" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/forty_dp"
+            android:layout_marginRight="@dimen/forty_dp"
+            android:layout_marginTop="@dimen/ten_dp_dimens"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/fragment_signup_checkbox_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:hint="@string/restaurant_manager"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="@dimen/default_font"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fragment_signup_button_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/twenty_dp_dimens"
+            android:layout_marginLeft="@dimen/eighty_dp"
+            android:layout_marginRight="@dimen/eighty_dp"
+            android:layout_marginTop="@dimen/twenty_dp_dimens"
+            android:background="@drawable/button_bg_red"
+            android:paddingBottom="@dimen/ten_dp_dimens"
+            android:paddingTop="@dimen/ten_dp_dimens"
+            android:singleLine="true"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_font"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_order_ll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/row_order_text_view_restaurant_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten_dp_dimens"
+        android:textSize="@dimen/big_font" />
+
+
+    <TextView
+        android:id="@+id/row_order_text_view_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten_dp_dimens"
+        android:textSize="@dimen/big_font" />
+
+
+    <TextView
+        android:id="@+id/row_order_text_view_date_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten_dp_dimens"
+        android:textSize="@dimen/big_font" />
+
+
+    <TextView
+        android:id="@+id/row_order_text_view_reservation_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten_dp_dimens"
+        android:textSize="@dimen/big_font" />
+
+
+    <TextView
+        android:id="@+id/row_order_text_view_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/eighty_dp"
+        android:layout_marginRight="@dimen/eighty_dp"
+        android:layout_marginTop="@dimen/twenty_dp_dimens"
+        android:layout_marginBottom="@dimen/ten_dp_dimens"
+        android:background="@drawable/button_bg_red"
+        android:gravity="center"
+        android:padding="@dimen/ten_dp_dimens"
+        android:singleLine="true"
+        android:text="@string/cancel"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_font"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/row_order_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp_dimens"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/row_order_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ten_dp_dimens"
+            android:src="@drawable/ic_done_green" />
+
+
+        <ImageView
+            android:id="@+id/row_order_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/five_dp_dimens"
+            android:padding="@dimen/ten_dp_dimens"
+            android:src="@drawable/ic_close_red" />
+    </LinearLayout>
+
+
+</LinearLayout>

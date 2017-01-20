@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rest_photo_grid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/val200"
+        android:layout_marginTop="@dimen/val10"
+        android:columnWidth="@dimen/val50" />
+
+
+    <TextView
+        android:id="@+id/rest_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rest_photo_grid"
+        android:alpha=".8"
+        android:background="@color/myBlack"
+        android:gravity="center"
+        android:padding="@dimen/ten_dp_dimens"
+        android:text="@string/menu"
+        android:textColor="@color/aquaa"
+        android:textSize="@dimen/textsize_20"
+        android:typeface="serif" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rest_menu_grid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/val200"
+        android:layout_below="@id/rest_menu"
+        android:layout_marginTop="@dimen/val10"
+        android:columnWidth="@dimen/val50" />
+
+
+    <Button
+        android:id="@+id/rest_button_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/val20"
+        android:background="@color/aquaa"
+        android:paddingLeft="@dimen/val15"
+        android:text="@string/book_table"
+        android:textColor="@color/myBlack"
+        android:textSize="@dimen/val20" />
+
+
+</RelativeLayout>

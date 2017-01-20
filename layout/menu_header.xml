@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/statusbar_height"
+    android:background="@color/text1"
+    android:orientation="vertical">
+
+    <com.restaurantsapp.utils.RoundedImageView
+        android:id="@+id/menu_header_user_profile"
+        android:layout_width="@dimen/profile_image_size"
+        android:layout_height="@dimen/profile_image_size"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/ten_dp_dimens"
+        android:background="@color/white"
+        android:src="@drawable/men_image"
+        app:border_color="@color/white"
+        app:border_width="2dp" />
+
+
+    <TextView
+        android:id="@+id/menu_header_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/menu_header_user_profile"
+        android:padding="@dimen/ten_dp_dimens"
+        android:text="John Doe"
+        android:textColor="@color/white"
+        android:textSize="@dimen/big_font" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/fifteen_dp_dimens"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

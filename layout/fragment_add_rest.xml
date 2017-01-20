@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/ten_dp_dimens">
+
+
+            <EditText
+                android:id="@+id/et_nameofrest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_dp_dimens"
+                android:hint="Enter name"
+                android:inputType="textVisiblePassword"
+                android:padding="@dimen/ten_dp_dimens" />
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="gone"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+        <!--android:id="@+id/add_banner"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/lightaqua"-->
+        <!--android:padding="@dimen/five_dp_dimens"-->
+        <!--android:text="Add Banner Photo"-->
+        <!--android:textColor="@color/myBlack"-->
+        <!--android:textSize="@dimen/medium_font" />-->
+
+
+        <!--<Button-->
+        <!--android:id="@+id/add_menu"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginLeft="@dimen/ten_dp_dimens"-->
+        <!--android:background="@color/fluorogreen"-->
+        <!--android:padding="@dimen/five_dp_dimens"-->
+        <!--android:text="Add Menu Photo"-->
+        <!--android:textColor="@color/myBlack"-->
+        <!--android:textSize="@dimen/medium_font" />-->
+
+        <!--</LinearLayout>-->
+
+        <TextView
+            android:id="@+id/add_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl1"
+            android:layout_marginTop="@dimen/ten_dp_dimens"
+            android:padding="@dimen/ten_dp_dimens"
+            android:textColor="#c90909"
+            android:textStyle="bold"
+            android:text="Add Photos" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rest_banner_grid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/val200"
+            android:layout_marginTop="@dimen/val10"
+            android:columnWidth="@dimen/val50"
+            android:layout_marginLeft="@dimen/val10"/>
+
+        <TextView
+            android:id="@+id/add_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_dp_dimens"
+            android:padding="@dimen/ten_dp_dimens"
+            android:textColor="#c90909"
+            android:textStyle="bold"
+            android:text="Add menu" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rest_menu_grid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/val200"
+            android:layout_marginTop="@dimen/val10"
+            android:columnWidth="@dimen/val50"
+            android:layout_marginLeft="@dimen/val10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/ten_dp_dimens"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/table_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/lightaqua"
+                android:padding="@dimen/ten_dp_dimens"
+                android:text="Number of tables" />
+
+            <EditText
+                android:id="@+id/et_tablenum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_dp_dimens"
+                android:layout_toRightOf="@id/table_num"
+                android:hint="4"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rest_button_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/val20"
+            android:background="#c90909"
+            android:text="Add"
+            android:textColor="@color/myBlack"
+            android:textSize="@dimen/val20" />
+
+
+    </LinearLayout>
+</ScrollView>

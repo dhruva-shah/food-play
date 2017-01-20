@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C90909</color>
+    <color name="colorPrimaryDark">#A80909</color>
+    <color name="color_sign_up_button">#903F51B5</color>
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorAccent">#C90909</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green">#008000</color>
+    <color name="text1">#212121</color>
+    <color name="text2">#474747</color>
+    <color name="text3">#46494b</color>
+    <color name="text4">#4d4d4d</color>
+    <color name="text5">#656565</color>
+    <color name="text6">#6a6a6a</color>
+    <color name="text7">#7d7d7d</color>
+    <color name="text8">#8b8b8b</color>
+    <color name="text9">#a2a2a2</color>
+    <color name="text10">#a8a8a8</color>
+    <color name="text11">#cecece</color>
+    <color name="text12">#f2f2f2</color>
+    <color name="text13">#323333</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="bg_row_color">#6580cbc4</color>
+
+
+    <color name="aquaa">#00FFA9</color>
+    <color name="fluorogreen">#AAFF00</color>
+    <color name="peachOrange">#FF3D42</color>
+    <color name="myBlack">#000000</color>
+    <color name="myorange">#ffe04a</color>
+    <color name="mywhite">#ffffff</color>
+    <color name="lightaqua">#82FAD0</color>
+
+
+</resources>
